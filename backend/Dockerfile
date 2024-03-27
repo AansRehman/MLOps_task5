@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install Flask and pymongo
+RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install flask pymongo flask_cors
 
 # Expose port 5000
